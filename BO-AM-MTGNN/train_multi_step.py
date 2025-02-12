@@ -390,7 +390,7 @@ if __name__ == "__main__":
     print('\n\n')
     #test data
     print('test|horizon\tMAE-mean\tRMSE-mean\tMAPE-mean\tMAE-std\tRMSE-std\tMAPE-std\tR2-std')
-    for i in range (args.seq_out_len):  #args.seq_out_len-1  输出步长-1
+    for i in range (args.seq_out_len): 
         log = '{:d}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}\t{:.4f}'
         print(log.format(i+1, amae[i], armse[i], amape[i], ar2[i], smae[i], srmse[i], smape[i],sr2[i]))
 
